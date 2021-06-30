@@ -93,7 +93,7 @@ function gameOver(won,message) {
   //If won=true then color will be green else color will be red
   won === true ? color = 'green' : color = 'red'
   
-  //disable the input if the remaining guesses are not zero
+  //disable the input if the remaining guesses are zero
   if(guessesLeft !== 0) {
     guessInput.disabled = false;
   } else { //disable the input if guesses becomes zero
